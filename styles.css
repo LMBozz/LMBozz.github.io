@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 /* BUTTON STYLES */
@@ -34,7 +34,7 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    color: #b8b8b8;
+    color: white;
     cursor: pointer;
     display: flex;
     font-size: 20px;
@@ -45,8 +45,13 @@ body {
     transition: 
         box-shadow 0.3s ease, 
         color 0.3s ease, 
-        transform 0.2s ease,
-        background 0.3s ease;
+        transform 0.2s ease
+}
+
+.button-container button img {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
 }
 
 /* SMALL BUTTON MODIFIER */
@@ -61,6 +66,20 @@ body {
     transform: translateY(2px);
 }
 
+.button-container button.active::before {
+    position: absolute;
+    border-radius: 10px;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #e99444, #e01212);
+    z-index: -1;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+}
+
 /* BUTTON FOCUS STATE */
 .button-container button:focus {
     outline: none;
@@ -68,32 +87,36 @@ body {
 
 /* BUTTON HOVER STYLES (INACTIVE) */
 .button-container button:not(.active):hover {
-    background: linear-gradient(to bottom, #525357, #424246); /* Default hover gradient for button-container */
+    background: linear-gradient(to bottom, #525357, #424246);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
-    color: white; /* Change text color to white on hover */
+    color: white;
     transform: scale(1.05);
 }
 
 /* BUTTON ACTIVE STYLES (INACTIVE) */
 .button-container button:not(.active):active {
-    background: linear-gradient(to bottom, #3d3e41, #2e2e31); /* Darker gradient on active */
+    background: linear-gradient(to bottom, #3d3e41, #2e2e31);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
     color: #bfbfbf;
-    transform: scale(0.95); /* Make button smaller on click (active) */
+    transform: scale(0.95);
 }
 
 /* ACTIVE BUTTON HOVER STYLES */
 .button-container button.active:hover {
-    background: linear-gradient(to bottom, #e99444, #e01212); /* Orange-red gradient for hover on active button */
+    background: linear-gradient(to bottom, #ff4d4d, #cc0000);
     box-shadow: 0 0 8px rgba(255, 50, 50, 0.3);
     transform: scale(1.05);
 }
 
+.button-container button.active:hover::before {
+    opacity: 1;
+}
+
 /* ACTIVE BUTTON ACTIVE STYLES */
 .button-container button.active:active {
-    background: linear-gradient(to bottom, #e99444, #e01212); /* Orange-red gradient for active button */
+    background: linear-gradient(to bottom, #e99444, #e01212);
     box-shadow: 0 0 8px rgba(175, 35, 35, 0.3);
-    transform: scale(0.95); /* Make button smaller on click (active) */
+    transform: scale(0.95);
 }
 
 /* RANDOMISE BUTTON CONTAINER STYLES */
@@ -124,8 +147,21 @@ body {
         color 0.3s ease,
         width 0.2s,
         height 0.2s,
-        transform 0.2s,
-        background 0.3s ease;
+        transform 0.2s ease
+}
+
+.randomise-button-container button::before {
+    position: absolute;
+    border-radius: 10px;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #e99444, #e01212);
+    z-index: -1;
+    transition: opacity 0.2s linear;
+    opacity: 0;
 }
 
 /* SETTINGS BUTTON MODIFIER */
@@ -135,30 +171,33 @@ body {
 
 /* RANDOMISE BUTTON HOVER STATE */
 .randomise-button-container button:hover {
-    background: linear-gradient(to bottom, #e99444, #e01212); /* Hover red to orange gradient */
+    background: linear-gradient(to bottom, #ff4d4d, #cc0000);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
     color: white;
     transform: scale(1.05);
 }
 
+.randomise-button-container button:hover::before {
+    opacity: 1;
+}
+
 /* RANDOMISE BUTTON ACTIVE STATE */
 .randomise-button-container button:active {
-    background: linear-gradient(to bottom, #c57d3a, #c41010); /* Darker gradient on active */
+    background: linear-gradient(to bottom, #c57d3a, #c41010);
     box-shadow: 0 0 8px rgba(175, 35, 35, 0.3);
-    transform: translateY(1px);
-    transition: transform 0.01s;
+    transform: scale(0.95);
 }
 
 /* RANDOMISE BUTTON ACTIVE HOVER STATE */
 .randomise-button-container button.active:hover {
-    background: linear-gradient(to bottom, #ff6666, #b30000); /* Dark red on hover for active randomise button */
+    background: linear-gradient(to bottom, #ff6666, #b30000);
     box-shadow: 0 0 8px rgba(255, 50, 50, 0.3);
     transform: scale(1.05);
 }
 
 /* RANDOMISE BUTTON ACTIVE ACTIVE STATE */
 .randomise-button-container button.active:active {
-    background: linear-gradient(to bottom, #c44f4f, #700000); /* Dark red on active for active randomise button */
+    background: linear-gradient(to bottom, #c44f4f, #700000);
     box-shadow: 0 0 8px rgba(175, 35, 35, 0.3);
 }
 
@@ -175,4 +214,131 @@ body {
     display: inline-block;
     padding: 0;
     list-style: none;
+}
+
+/* SETTINGS MENU STYLES */
+.settings-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 35px auto;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    width: max-content;
+    background: linear-gradient(to bottom, #5b5d61, #323235);
+    color: white;
+    padding: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s linear, padding 0.2s linear;
+}
+
+.settings-menu.no-transition {
+    transition: none !important;
+}
+
+/* SETTINGS MENU SHOWING STATE */
+.settings-menu.show {
+    display: flex;
+    max-height: 500px;
+    padding: 20px;
+}
+
+/* FADE OUT EFFECT FOR CHILD ELEMENTS */
+.settings-menu .settings-row,
+.settings-menu button {
+    transition: opacity 0.2s linear;
+}
+
+/* FADE OUT CHILDREN ON SHRINKING */
+.settings-menu:not(.show) .settings-row,
+.settings-menu:not(.show) button {
+    opacity: 0;
+}
+
+/* SETTINGS MENU BUTTON STYLES */
+.settings-menu button {
+    align-self: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ff4d4d, #cc0000);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    height: 30px;
+    justify-content: center;
+    padding: 20px 15px;
+    width: 150px;
+    position: relative;
+    transition: 
+        box-shadow 0.2s ease, 
+        color 0.2s ease,
+        width 0.2s,
+        height 0.2s,
+        transform 0.2s ease,
+        opacity 0.2s;
+}
+
+/* SETTINGS MENU BUTTON PSEUDO-ELEMENT FOR SECOND GRADIENT */
+.settings-menu button::before {
+    position: absolute;
+    border-radius: 10px;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #e99444, #e01212);
+    z-index: -1;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+}
+
+/* SETTINGS MENU BUTTON HOVER STATE */
+.settings-menu button:hover {
+    background: linear-gradient(to bottom, #ff4d4d, #cc0000);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+    color: white;
+    transform: scale(1.025);
+}
+
+.settings-menu button:hover::before {
+    opacity: 1;
+}
+
+/* SETTINGS MENU BUTTON ACTIVE STATE */
+.settings-menu button:active {
+    background: linear-gradient(to bottom, #c57d3a, #c41010);
+    box-shadow: 0 0 8px rgba(175, 35, 35, 0.3);
+    transform: scale(0.95);
+}
+
+/* SETTINGS ROW STYLES */
+.settings-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.settings-row label {
+    width: 100px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.settings-row input[type="number"] {
+    width: 40px;
+    font-size: 18px;
+    padding: 4px;
+    text-align: left;
+    margin-left: 10px;
 }
