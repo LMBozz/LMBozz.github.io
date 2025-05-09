@@ -1,0 +1,230 @@
+{
+    "DUELIST": [
+        {
+            "tag": "blackpanther",
+            "name": "Black Panther",
+            "image": "images/blackpanther.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "blackwidow",
+            "name": "Black Widow",
+            "image": "images/blackwidow.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "hawkeye",
+            "name": "Hawkeye",
+            "image": "images/hawkeye.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "hela",
+            "name": "Hela",
+            "image": "images/hela.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "humantorch",
+            "name": "Human Torch",
+            "image": "images/humantorch.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "ironfist",
+            "name": "Iron Fist",
+            "image": "images/ironfist.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "ironman",
+            "name": "Iron Man",
+            "image": "images/ironman.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "magik",
+            "name": "Magik",
+            "image": "images/magik.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "misterfantastic",
+            "name": "Mister Fantastic",
+            "image": "images/misterfantastic.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "moonknight",
+            "name": "Moon Knight",
+            "image": "images/moonknight.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "namor",
+            "name": "Namor",
+            "image": "images/namor.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "psylocke",
+            "name": "Psylocke",
+            "image": "images/psylocke.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "scarletwitch",
+            "name": "Scarlet Witch",
+            "image": "images/scarletwitch.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "spiderman",
+            "name": "Spider-Man",
+            "image": "images/spiderman.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "squirrelgirl",
+            "name": "Squirrel Girl",
+            "image": "images/squirrelgirl.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "starlord",
+            "name": "Star-Lord",
+            "image": "images/starlord.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "storm",
+            "name": "Storm",
+            "image": "images/storm.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "thepunisher",
+            "name": "The Punisher",
+            "image": "images/thepunisher.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "wintersoldier",
+            "name": "Winter Soldier",
+            "image": "images/wintersoldier.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "wolverine",
+            "name": "Wolverine",
+            "image": "images/wolverine.jpg",
+            "type": "Duelist"
+        }
+    ],
+    "STRATEGIST": [
+        {
+            "tag": "adamwarlock",
+            "name": "Adam Warlock",
+            "image": "images/adamwarlock.jpg",
+            "type": "Strategist"
+        },
+        {
+            "tag": "cloakanddagger",
+            "name": "Cloak & Dagger",
+            "image": "images/cloakanddagger.jpg",
+            "type": "Strategist"
+        },
+        {
+            "tag": "invisiblewoman",
+            "name": "Invisible Woman",
+            "image": "images/invisiblewoman.jpg",
+            "type": "Strategist"
+        },
+        {
+            "tag": "jeffthelandshark",
+            "name": "Jeff the Land Shark",
+            "image": "images/jeffthelandshark.jpg",
+            "type": "Strategist"
+        },
+        {
+            "tag": "loki",
+            "name": "Loki",
+            "image": "images/loki.jpg",
+            "type": "Strategist"
+        },
+        {
+            "tag": "lunasnow",
+            "name": "Luna Snow",
+            "image": "images/lunasnow.jpg",
+            "type": "Strategist"
+        },
+        {
+            "tag": "mantis",
+            "name": "Mantis",
+            "image": "images/mantis.jpg",
+            "type": "Strategist"
+        },
+        {
+            "tag": "rocketraccoon",
+            "name": "Rocket Raccoon",
+            "image": "images/rocketracoon.jpg",
+            "type": "Strategist"
+        }
+    ],
+    "VANGUARD": [
+        {
+            "tag": "captainamerica",
+            "name": "Captain America",
+            "image": "images/captainamerica.jpg",
+            "type": "Vanguard"
+        },
+        {
+            "tag": "doctorstrange",
+            "name": "Doctor Strange",
+            "image": "images/doctorstrange.jpg",
+            "type": "Vanguard"
+        },
+        {
+            "tag": "groot",
+            "name": "Groot",
+            "image": "images/groot.jpg",
+            "type": "Vanguard"
+        },
+        {
+            "tag": "hulk",
+            "name": "Hulk",
+            "image": "images/hulk.jpg",
+            "type": "Vanguard"
+        },
+        {
+            "tag": "magneto",
+            "name": "Magneto",
+            "image": "images/magneto.jpg",
+            "type": "Vanguard"
+        },
+        {
+            "tag": "peniparker",
+            "name": "Peni Parker",
+            "image": "images/peniparker.jpg",
+            "type": "Vanguard"
+        },
+        {
+            "tag": "thething",
+            "name": "The Thing",
+            "image": "images/thething.jpg",
+            "type": "Vanguard"
+        },
+        {
+            "tag": "thor",
+            "name": "Thor",
+            "image": "images/thor.jpg",
+            "type": "Vanguard"
+        },
+        {
+            "tag": "venom",
+            "name": "Venom",
+            "image": "images/venom.jpg",
+            "type": "Vanguard"
+        }
+    ]
+}

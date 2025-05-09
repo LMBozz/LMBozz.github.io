@@ -1,0 +1,178 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    font-family: "Iceland", sans-serif;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: #27282b;
+}
+
+/* TOP BAR STYLES */
+.top-bar {
+    overflow: hidden;
+    text-align: center;
+    background-color: #1d1e21;
+    color: #f3eceb;
+    font-size: 50px;
+    padding: 5px;
+}
+
+/* BUTTON CONTAINER STYLES */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+/* BUTTON STYLES */
+.button-container button {
+    align-items: center;
+    background: linear-gradient(to bottom, #434447, #37373a);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    color: #b8b8b8;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    height: 40px;
+    justify-content: center;
+    padding: 5px 15px;
+    width: 125px;
+    transition: 
+        box-shadow 0.3s ease, 
+        color 0.3s ease, 
+        transform 0.2s ease,
+        background 0.3s ease;
+}
+
+/* SMALL BUTTON MODIFIER */
+.button-container .small-button {
+    width: 50px;
+}
+
+/* ACTIVE BUTTON STYLES */
+.button-container button.active {
+    background: linear-gradient(to bottom, #ff4d4d, #cc0000);
+    color: white;
+    transform: translateY(2px);
+}
+
+/* BUTTON FOCUS STATE */
+.button-container button:focus {
+    outline: none;
+}
+
+/* BUTTON HOVER STYLES (INACTIVE) */
+.button-container button:not(.active):hover {
+    background: linear-gradient(to bottom, #525357, #424246); /* Default hover gradient for button-container */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
+    color: white; /* Change text color to white on hover */
+    transform: scale(1.05);
+}
+
+/* BUTTON ACTIVE STYLES (INACTIVE) */
+.button-container button:not(.active):active {
+    background: linear-gradient(to bottom, #3d3e41, #2e2e31); /* Darker gradient on active */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    color: #bfbfbf;
+    transform: scale(0.95); /* Make button smaller on click (active) */
+}
+
+/* ACTIVE BUTTON HOVER STYLES */
+.button-container button.active:hover {
+    background: linear-gradient(to bottom, #e99444, #e01212); /* Orange-red gradient for hover on active button */
+    box-shadow: 0 0 8px rgba(255, 50, 50, 0.3);
+    transform: scale(1.05);
+}
+
+/* ACTIVE BUTTON ACTIVE STYLES */
+.button-container button.active:active {
+    background: linear-gradient(to bottom, #e99444, #e01212); /* Orange-red gradient for active button */
+    box-shadow: 0 0 8px rgba(175, 35, 35, 0.3);
+    transform: scale(0.95); /* Make button smaller on click (active) */
+}
+
+/* RANDOMISE BUTTON CONTAINER STYLES */
+.randomise-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* RANDOMISE BUTTON STYLES */
+.randomise-button-container button {
+    align-items: center;
+    background: linear-gradient(to bottom, #ff4d4d, #cc0000);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 30px;
+    height: 50px;
+    justify-content: center;
+    padding: 5px 15px;
+    width: 175px;
+    transition: 
+        box-shadow 0.3s ease, 
+        color 0.3s ease,
+        width 0.2s,
+        height 0.2s,
+        transform 0.2s,
+        background 0.3s ease;
+}
+
+/* SETTINGS BUTTON MODIFIER */
+.randomise-button-container .settings-button {
+    width: 50px;
+}
+
+/* RANDOMISE BUTTON HOVER STATE */
+.randomise-button-container button:hover {
+    background: linear-gradient(to bottom, #e99444, #e01212); /* Hover red to orange gradient */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* RANDOMISE BUTTON ACTIVE STATE */
+.randomise-button-container button:active {
+    background: linear-gradient(to bottom, #c57d3a, #c41010); /* Darker gradient on active */
+    box-shadow: 0 0 8px rgba(175, 35, 35, 0.3);
+    transform: translateY(1px);
+    transition: transform 0.01s;
+}
+
+/* RANDOMISE BUTTON ACTIVE HOVER STATE */
+.randomise-button-container button.active:hover {
+    background: linear-gradient(to bottom, #ff6666, #b30000); /* Dark red on hover for active randomise button */
+    box-shadow: 0 0 8px rgba(255, 50, 50, 0.3);
+    transform: scale(1.05);
+}
+
+/* RANDOMISE BUTTON ACTIVE ACTIVE STATE */
+.randomise-button-container button.active:active {
+    background: linear-gradient(to bottom, #c44f4f, #700000); /* Dark red on active for active randomise button */
+    box-shadow: 0 0 8px rgba(175, 35, 35, 0.3);
+}
+
+/* CHARACTER LIST STYLES */
+.character-list {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+/* CHARACTER LIST UL STYLES */
+#character-list {
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+}
