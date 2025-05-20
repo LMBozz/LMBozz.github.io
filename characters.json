@@ -185,6 +185,12 @@
             "type": "Vanguard"
         },
         {
+            "tag": "emmafrost",
+            "name": "Emma Frost",
+            "image": "images/emmafrost.jpg",
+            "type": "Vanguard"
+        },
+        {
             "tag": "groot",
             "name": "Groot",
             "image": "images/groot.jpg",
