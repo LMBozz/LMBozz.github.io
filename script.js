@@ -45,6 +45,9 @@ fetch('characters.json')
         });
     }
 
+    
+    let lastCharacter = null;
+
     function randomiseCharacter() {
         let charactersToRandomise = [];
 
@@ -58,15 +61,26 @@ fetch('characters.json')
             charactersToRandomise = characters[currentCategory.toUpperCase()];
         }
 
-        const randomCharacter = charactersToRandomise[Math.floor(Math.random() * charactersToRandomise.length)];
+        // If only one character, no point checking
+        if (charactersToRandomise.length <= 1) {
+            var randomCharacter = charactersToRandomise[0];
+        } else {
+            let attempts = 0;
+            let randomCharacter;
+            do {
+                randomCharacter = charactersToRandomise[Math.floor(Math.random() * charactersToRandomise.length)];
+                attempts++;
+            } while (randomCharacter === lastCharacter && attempts < 10); // safety to avoid infinite loop
+            lastCharacter = randomCharacter;
+        }
 
         characterList.innerHTML = '';
         const card = document.createElement('div');
         card.className = 'character-card';
 
         const img = document.createElement('img');
-        img.src = randomCharacter.image;
-        img.alt = randomCharacter.name;
+        img.src = lastCharacter.image;
+        img.alt = lastCharacter.name;
 
         card.appendChild(img);
         characterList.appendChild(card);
