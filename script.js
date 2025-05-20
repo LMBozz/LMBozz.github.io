@@ -33,9 +33,15 @@ fetch('characters.json')
         }
 
         charactersToDisplay.forEach(character => {
-            const li = document.createElement('li');
-            li.textContent = character.name;
-            characterList.appendChild(li);
+            const card = document.createElement('div');
+            card.className = 'character-card';
+
+            const img = document.createElement('img');
+            img.src = character.image;
+            img.alt = character.name;
+
+            card.appendChild(img);
+            characterList.appendChild(card);
         });
     }
 
@@ -55,9 +61,15 @@ fetch('characters.json')
         const randomCharacter = charactersToRandomise[Math.floor(Math.random() * charactersToRandomise.length)];
 
         characterList.innerHTML = '';
-        const li = document.createElement('li');
-        li.textContent = randomCharacter.name;
-        characterList.appendChild(li);
+        const card = document.createElement('div');
+        card.className = 'character-card';
+
+        const img = document.createElement('img');
+        img.src = randomCharacter.image;
+        img.alt = randomCharacter.name;
+
+        card.appendChild(img);
+        characterList.appendChild(card);
     }
 
     // Restore input values from sessionStorage or default to 0
@@ -123,9 +135,15 @@ fetch('characters.json')
 
         characterList.innerHTML = '';
         selectedCharacters.forEach(character => {
-            const li = document.createElement('li');
-            li.textContent = character.name;
-            characterList.appendChild(li);
+            const card = document.createElement('div');
+            card.className = 'character-card';
+
+            const img = document.createElement('img');
+            img.src = character.image;
+            img.alt = character.name;
+
+            card.appendChild(img);
+            characterList.appendChild(card);
         });
     });
 

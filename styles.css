@@ -23,8 +23,16 @@ body {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-top: 35px;
+    margin-bottom: 20px;
+    flex-direction: row; /* Default: one row */
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
 }
 
 /* BUTTON STYLES */
@@ -119,6 +127,19 @@ body {
     transform: scale(0.95);
 }
 
+/* MOBILE RESPONSIVE: SPLIT BUTTON ROWS */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-row {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 /* RANDOMISE BUTTON CONTAINER STYLES */
 .randomise-button-container {
     display: flex;
@@ -203,17 +224,77 @@ body {
 
 /* CHARACTER LIST STYLES */
 .character-list {
-    margin-top: 100px;
-    text-align: center;
-    color: white;
-    font-size: 50px;
+    margin-top: clamp(30px, 10vw, 50px);
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
 }
 
-/* CHARACTER LIST UL STYLES */
+/* CHARACTER LIST GRID STYLES */
 #character-list {
-    display: inline-block;
+  display: grid;
+  gap: 20px; /* Gap always 20px */
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+
+  /* 3 is minimum columns, 6 is maximum */
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  grid-auto-flow: row;
+}
+
+/* max width to prevent more than 6 columns */
+@media (min-width: calc(200px * 6 + 20px * 5)) {
+  #character-list {
+    max-width: calc(200px * 6 + 20px * 5);
+    margin: 0 auto;
+  }
+}
+
+/* prevent going below 3 columns */
+@media (max-width: calc(200px * 3 + 20px * 2)) {
+  #character-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#character-list li {
+    margin: 0;
     padding: 0;
-    list-style: none;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 50px, auto;
+    max-width: 90%;
+}
+
+.character-card {
+    max-width: 200px;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    background-color: #1d1e21;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.character-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
 }
 
 /* SETTINGS MENU STYLES */

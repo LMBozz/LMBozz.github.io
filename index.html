@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Randomiser</title>
+    <link rel="icon" type="image/png" href="favicon.png"/>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/9cbc196ccd.js" crossorigin="anonymous"></script>
     <style>
@@ -17,11 +18,16 @@
     </div>
 
     <div class="button-container">
-        <button class="small-button active" id="all">All</button>
-        <button id="vanguard"><img src="icons/shield.svg"/>Vanguard</button>
-        <button id="duelist"><img src="icons/fist.svg"/>Duelist</button>
-        <button id="strategist"><img src="icons/heart.svg"/>Strategist</button>
+        <div class="button-row">
+            <button class="small-button active" id="all">All</button>
+            <button id="vanguard"><img src="icons/shield.svg"/>Vanguard</button>
+        </div>
+        <div class="button-row">
+            <button id="duelist"><img src="icons/fist.svg"/>Duelist</button>
+            <button id="strategist"><img src="icons/heart.svg"/>Strategist</button>
+        </div>
     </div>
+
 
     <div class="randomise-button-container">
         <button class="randomise-button" id="randomise">Randomise!</button>
@@ -46,7 +52,7 @@
     </div>
 
     <div class="character-list">
-        <ul id="character-list"></ul>
+        <div id="character-list" class="character-grid"></div>
     </div>
 
     <script src="script.js"></script>
