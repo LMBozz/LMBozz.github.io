@@ -123,10 +123,19 @@ fetch('characters.json')
     const pickButton = document.getElementById('pick-button');
     const resetButton = document.getElementById('reset-button');
 
-    function getRandomItems(array, count) {
-        const shuffled = [...array].sort(() => 0.5 - Math.random());
+    function getRandomItems(array, count, lastSelected = []) {
+        const filtered = array.filter(item => !lastSelected.includes(item));
+        
+        // If not enough items remain after filtering, fallback to full array
+        const pool = filtered.length >= count ? filtered : array;
+
+        const shuffled = [...pool].sort(() => 0.5 - Math.random());
         return shuffled.slice(0, count);
     }
+
+    let lastVanguard = [];
+    let lastDuelist = [];
+    let lastStrategist = [];
 
     pickButton.addEventListener('click', () => {
         if (window.getComputedStyle(settingsMenu).display !== 'flex') {
@@ -141,10 +150,19 @@ fetch('characters.json')
         sessionStorage.setItem('duelist', duelistCount);
         sessionStorage.setItem('strategist', strategistCount);
 
+        const selectedVanguard = getRandomItems(characters.VANGUARD, vanguardCount, lastVanguard);
+        const selectedDuelist = getRandomItems(characters.DUELIST, duelistCount, lastDuelist);
+        const selectedStrategist = getRandomItems(characters.STRATEGIST, strategistCount, lastStrategist);
+
+        // Save current picks as last picks
+        lastVanguard = selectedVanguard;
+        lastDuelist = selectedDuelist;
+        lastStrategist = selectedStrategist;
+
         const selectedCharacters = [
-            ...getRandomItems(characters.VANGUARD, vanguardCount),
-            ...getRandomItems(characters.DUELIST, duelistCount),
-            ...getRandomItems(characters.STRATEGIST, strategistCount),
+            ...selectedVanguard,
+            ...selectedDuelist,
+            ...selectedStrategist
         ];
 
         characterList.innerHTML = '';
@@ -160,6 +178,7 @@ fetch('characters.json')
             characterList.appendChild(card);
         });
     });
+
 
     resetButton.addEventListener('click', () => {
         inputs.forEach((input, idx) => {
