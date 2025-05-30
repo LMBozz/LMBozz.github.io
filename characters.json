@@ -169,6 +169,12 @@
             "name": "Rocket Raccoon",
             "image": "images/rocketracoon.jpg",
             "type": "Strategist"
+        },
+        {
+            "tag": "ultron",
+            "name": "Ultron",
+            "image": "images/ultron.jpg",
+            "type": "Strategist"
         }
     ],
     "VANGUARD": [
