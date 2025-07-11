@@ -73,6 +73,12 @@
             "type": "Duelist"
         },
         {
+            "tag": "phoenix",
+            "name": "Phoenix",
+            "image": "images/phoenix.jpg",
+            "type": "Duelist"
+        },
+        {
             "tag": "scarletwitch",
             "name": "Scarlet Witch",
             "image": "images/scarletwitch.jpg",
