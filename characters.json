@@ -13,6 +13,12 @@
             "type": "Duelist"
         },
         {
+            "tag": "blade",
+            "name": "Blade",
+            "image": "images/blade.jpg",
+            "type": "Duelist"
+        },
+        {
             "tag": "hawkeye",
             "name": "Hawkeye",
             "image": "images/hawkeye.jpg",
