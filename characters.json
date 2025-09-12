@@ -191,6 +191,12 @@
     ],
     "VANGUARD": [
         {
+            "tag": "angela",
+            "name": "Angela",
+            "image": "images/angela.jpg",
+            "type": "Vanguard"
+        },
+        {
             "tag": "captainamerica",
             "name": "Captain America",
             "image": "images/captainamerica.jpg",
