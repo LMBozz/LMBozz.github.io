@@ -131,6 +131,12 @@
             "name": "Wolverine",
             "image": "images/wolverine.jpg",
             "type": "Duelist"
+        },
+        {
+            "tag": "daredevil",
+            "name": "Daredevil",
+            "image": "images/daredevil.jpg",
+            "type": "Duelist"
         }
     ],
     "STRATEGIST": [
