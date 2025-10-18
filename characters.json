@@ -19,6 +19,12 @@
             "type": "Duelist"
         },
         {
+            "tag": "daredevil",
+            "name": "Daredevil",
+            "image": "images/daredevil.jpg",
+            "type": "Duelist"
+        },
+        {
             "tag": "hawkeye",
             "name": "Hawkeye",
             "image": "images/hawkeye.jpg",
@@ -130,12 +136,6 @@
             "tag": "wolverine",
             "name": "Wolverine",
             "image": "images/wolverine.jpg",
-            "type": "Duelist"
-        },
-        {
-            "tag": "daredevil",
-            "name": "Daredevil",
-            "image": "images/daredevil.jpg",
             "type": "Duelist"
         }
     ],
@@ -264,3 +264,4 @@
         }
     ]
 }
+
