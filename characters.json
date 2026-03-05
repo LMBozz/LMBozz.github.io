@@ -19,9 +19,15 @@
             "type": "Duelist"
         },
         {
-            "tag": "daredevil",
-            "name": "Daredevil",
-            "image": "images/daredevil.jpg",
+            "tag": "deadpool_duel",
+            "name": "Deadpool",
+            "image": "images/deadpool_duel.jpg",
+            "type": "Duelist"
+        },
+        {
+            "tag": "elsa",
+            "name": "Elsa Bloodstone",
+            "image": "images/elsa.jpg",
             "type": "Duelist"
         },
         {
@@ -137,6 +143,12 @@
             "name": "Wolverine",
             "image": "images/wolverine.jpg",
             "type": "Duelist"
+        },
+        {
+            "tag": "daredevil",
+            "name": "Daredevil",
+            "image": "images/daredevil.jpg",
+            "type": "Duelist"
         }
     ],
     "STRATEGIST": [
@@ -150,6 +162,12 @@
             "tag": "cloakanddagger",
             "name": "Cloak & Dagger",
             "image": "images/cloakanddagger.jpg",
+            "type": "Strategist"
+        },
+        {
+            "tag": "deadpool_strag",
+            "name": "Deadpool",
+            "image": "images/deadpool_strat.jpg",
             "type": "Strategist"
         },
         {
@@ -209,6 +227,12 @@
             "type": "Vanguard"
         },
         {
+            "tag": "deadpool_van",
+            "name": "Deadpool",
+            "image": "images/deadpool_van.jpg",
+            "type": "Vanguard"
+        },
+        {
             "tag": "doctorstrange",
             "name": "Doctor Strange",
             "image": "images/doctorstrange.jpg",
@@ -245,6 +269,12 @@
             "type": "Vanguard"
         },
         {
+            "tag": "rogue",
+            "name": "Rogue",
+            "image": "images/rogue.jpg",
+            "type": "Vanguard"
+        },
+        {
             "tag": "thething",
             "name": "The Thing",
             "image": "images/thething.jpg",
@@ -264,4 +294,3 @@
         }
     ]
 }
-
