@@ -50,6 +50,7 @@ body {
     justify-content: center;
     padding: 5px 15px;
     width: 125px;
+    position: relative;
     transition: 
         box-shadow 0.3s ease, 
         color 0.3s ease, 
@@ -163,6 +164,7 @@ body {
     justify-content: center;
     padding: 5px 15px;
     width: 175px;
+    position: relative;
     transition: 
         box-shadow 0.3s ease, 
         color 0.3s ease,
