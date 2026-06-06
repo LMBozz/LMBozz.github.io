@@ -7,6 +7,12 @@
             "type": "Duelist"
         },
         {
+            "tag": "blackcat",
+            "name": "Black Cat",
+            "image": "images/blackcat.jpg",
+            "type": "Duelist"
+        },
+        {
             "tag": "blackwidow",
             "name": "Black Widow",
             "image": "images/blackwidow.jpg",
@@ -171,6 +177,12 @@
             "type": "Strategist"
         },
         {
+            "tag": "gambit",
+            "name": "Gambit",
+            "image": "images/gambit.jpg",
+            "type": "Strategist"
+        },
+        {
             "tag": "invisiblewoman",
             "name": "Invisible Woman",
             "image": "images/invisiblewoman.jpg",
@@ -211,6 +223,12 @@
             "name": "Ultron",
             "image": "images/ultron.jpg",
             "type": "Strategist"
+        },
+        {
+            "tag": "whitefox",
+            "name": "White Fox",
+            "image": "images/whitefox.jpg",
+            "type": "Strategist"
         }
     ],
     "VANGUARD": [
@@ -230,6 +248,12 @@
             "tag": "deadpool_van",
             "name": "Deadpool",
             "image": "images/deadpool_van.jpg",
+            "type": "Vanguard"
+        },
+        {
+            "tag": "devildino",
+            "name": "Devil Dinosaur",
+            "image": "images/devildino.jpg",
             "type": "Vanguard"
         },
         {
