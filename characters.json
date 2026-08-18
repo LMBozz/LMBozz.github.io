@@ -298,6 +298,12 @@
             "image": "images/rogue.jpg",
             "type": "Vanguard"
         },
+	{
+            "tag": "thehood",
+            "name": "The Hood",
+            "image": "images/thehood.jpg",
+            "type": "Vanguard"
+        },
         {
             "tag": "thething",
             "name": "The Thing",
