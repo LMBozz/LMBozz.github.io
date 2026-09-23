@@ -36,6 +36,12 @@
             "image": "images/elsa.jpg",
             "type": "Duelist"
         },
+{
+            "tag": "gorrthegodbutcher",
+            "name": "Gorr the God Butcher",
+            "image": "images/gorrthegodbutcher.jpg",
+            "type": "Duelist"
+        },
         {
             "tag": "hawkeye",
             "name": "Hawkeye",
