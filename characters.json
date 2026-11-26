@@ -36,12 +36,6 @@
             "image": "images/elsa.jpg",
             "type": "Duelist"
         },
-{
-            "tag": "gorrthegodbutcher",
-            "name": "Gorr the God Butcher",
-            "image": "images/gorrthegodbutcher.jpg",
-            "type": "Duelist"
-        },
         {
             "tag": "hawkeye",
             "name": "Hawkeye",
@@ -218,6 +212,12 @@
             "image": "images/mantis.jpg",
             "type": "Strategist"
         },
+	{
+            "tag": "nightcrawler",
+            "name": "Nightcrawler",
+            "image": "images/nightcrawler.jpg",
+            "type": "Strategist"
+        },
         {
             "tag": "rocketraccoon",
             "name": "Rocket Raccoon",
@@ -302,12 +302,6 @@
             "tag": "rogue",
             "name": "Rogue",
             "image": "images/rogue.jpg",
-            "type": "Vanguard"
-        },
-	{
-            "tag": "thehood",
-            "name": "The Hood",
-            "image": "images/thehood.jpg",
             "type": "Vanguard"
         },
         {
